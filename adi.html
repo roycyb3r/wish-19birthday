@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> I HATE YOU !!</title>
+    <link rel="stylesheet" href="xyz.css">
+    
+</head>
+<body >
+<div class="okey">    
+    <div class="card">
+        <div class="frontimg"> FUCKK YOUUH COCKROACH!!!</div>
+        <div class="flex-container">
+           <p> NAALI KE KEEDE <br>
+           </br> TU NAHI SUDHREGA NA!!! </p>
+        </div>
+    </div>
+</div>
+<div class="coffee-box">
+    <div class ="coffee">
+    <div class="coffee c1"></div>
+    <div class="coffee c2"></div>
+    <div class="coffee c3"></div>
+    <div class="coffee c4"></div>
+    <div class="coffee c5"></div>
+    <div class="coffee c6"></div>
+    <div class="coffee c7"></div>
+    <div class="coffee c8"></div>
+    <div class="coffee c9"></div>
+    <div class="coffee c10"></div>
+    <div class="coffee c11"></div>
+    <div class="coffee c12"></div>
+    <div class="coffee c13"></div>
+    <div class="coffee c14"></div>
+    <div class="coffee c15"></div>
+    <div class="coffee c16"></div>
+    <div class="coffee c17"></div>
+    <div class="coffee c18"></div>
+    <div class="coffee c19"></div>
+    <div class="coffee c20"></div>
+    </div>
+</div>
+<script>
+    const box = document.querySelector('.coffee-box');
+    const colors = ['#ff6b6b','#ffd93d','#6bcb77','#4d96ff','#f93dec','#11ebc6','#ec5700','#7442e9'];
+
+    for (let i = 0; i < 100; i++) {
+        const dot = document.createElement('div');
+        dot.classList.add('coffee');
+
+        dot.style.left = Math.random() * 100 + '%';        // random position 0-100%
+        dot.style.animationDuration = (2 + Math.random() * 5) + 's';   // random speed
+        dot.style.animationDelay = (Math.random() * 5) + 's';          // random start time
+        dot.style.background = colors[Math.floor(Math.random() * colors.length)];
+        dot.style.width = (6 + Math.random() * 10) + 'px';  // random size
+        dot.style.height = dot.style.width;
+
+        box.appendChild(dot);
+    }
+</script>
+</body>
+</html>

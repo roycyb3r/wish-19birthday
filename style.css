@@ -1,0 +1,141 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.parallax {
+  background-image: url("./xyz.png");
+  min-height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-attachment: fixed;
+   margin:0%;
+   padding: 0%;
+   background-blend-mode: multiply;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.flex-container {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius:15px;
+    font-family: cursive;
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: double;
+    margin: 0 auto;
+    padding: 30px;
+    width: 50%;
+  max-width: 700px;
+}
+.flex-container:hover {
+    background-color: black;
+}
+.flex-container{
+  width:50%;
+  max-width:700px;
+  padding:30px;
+  border-radius:15px;
+
+  background-color: rgba(100,149,237,0.9);
+  color:white;
+  font-family:cursive;
+
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(100,149,237,0.4);
+  }
+
+  50% {
+    box-shadow: 
+      0 0 20px rgba(100,149,237,0.8),
+      0 0 40px rgba(100,149,237,0.6),
+      0 0 60px rgba(100,149,237,0.4);
+  }
+
+  100% {
+    box-shadow: 0 0 10px rgba(100,149,237,0.4);
+  }
+}
+footer {
+    background-color: rgb(191, 112, 194);
+    color: white;
+    text-align: center;
+    position: sticky flex-end;
+    bottom: 0;
+    margin:0;
+    padding:0;
+    font-size:small;
+    width:100%;
+    display:block;
+}
+.heart {
+    color: red;
+    top: 10px;
+    animation: fallheart 1s linear infinite;
+    pointer-events: none;
+    position: fixed; 
+}
+.heart::before {
+    content: "❤";
+    display: block;
+    color: rgb(252, 112, 112);
+}
+@keyframes fallheart {
+    0%   { transform: translateY(0) rotate(0deg);    opacity: 1; }
+    100% { transform: translateY(110vh) rotate(45deg); opacity: 0; }
+}
+.audio {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+.song-card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    min-width: 280px;       
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+.song-name {
+    margin: 0;
+    font-family: cursive;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.song-msg {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin: 20px auto 0;
+    max-width: 600px;
+}
+.song-heading {
+    text-align: center;
+    font-family: cursive;
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    margin: 20px auto;
+}

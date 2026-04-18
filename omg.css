@@ -1,0 +1,98 @@
+body, html {
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+    height: 100%;
+    margin: 0px;
+}
+.xyz {
+    display: flex;
+    font-size: 2.5em;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 20px 20px 30px rgba(255, 105, 180, 0.5);
+}
+.a1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+     background: linear-gradient(135deg, rgb(253, 253, 253), cornflowerblue);
+    transition: background 0.3s ease;
+    transition: text-shadow 0.3s ease;
+    animation: glowPulse 2s infinite ease-in-out; 
+    font-family: cursive;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.a1:active {
+    transform: translateY(-1px);
+}
+.meow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 5px rgba(0, 4, 255, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(0, 4, 255, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(0, 4, 255, 0.8);
+    }
+}
+.audio {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    white-space: nowrap;
+}
+.song-card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 15px 20px;
+    min-width: 280px;       
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+}
+.song-name {
+    margin: 0;
+    font-family: cursive;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.song-msg {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin: 20px auto 0;
+    max-width: 600px;
+}
+.song-heading {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    margin: 20px auto;
+}
